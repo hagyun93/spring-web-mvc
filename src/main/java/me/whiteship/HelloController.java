@@ -17,8 +17,4 @@ public class HelloController {
         return "Hello, " + helloService.getName();
     }
 
-    @GetMapping("/sample")
-    public String sample() {
-        return "sample";
-    }
 }
