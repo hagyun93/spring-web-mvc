@@ -86,3 +86,16 @@ DispatcherServlet 초기화
   - 스프링 부트의 주관에 따라 여러 인터페이스 구현체를 빈으로 등록한다.
 
 
+### 스프링 MVC 설정
+1. 스프링 MVC 구성 요소 직접 빈으로 등록하기
+    - @Configuration 을 사용한 자바 설정 파일에 직접 @Bean 을 사용해서 등록하기
+
+2. @EnableWebMvc
+    - Spring, Spring Boot X
+    - 애노테이션 기반 스프링 MVC 를 사용할 때 편리한 웹 MVC 기본 설정
+    - 해당 애노테이션이 편리한 HandlerAdapter, HandlerMapping, ViewResolver 등등 빈으로 등록
+
+3. WebMvcConfigurer Interface
+    - 재정의하며 손쉽게 설정 추가 가능
+    - Spring Boot 에서도 자주 사용
+
